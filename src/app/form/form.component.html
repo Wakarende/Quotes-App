@@ -20,8 +20,9 @@
      </div>
      <button type="submit">Add Quote</button>
 </form> -->
-<div class="container">
-  <div class="card card-title">
+
+<div class="container shadow p-3 mb-5 bg-white rounded">
+  <div class="card card-title form-card">
     <h1 class="text-center">Add New Quote Here</h1>
     <div class="card-body">
       <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
@@ -37,7 +38,7 @@
           Author:
         </label>
         <input type="text" id="author" class="form-control" formControlName="author">
-        <button type="submit">Add Quote</button>
+        <button class="btn btn-primary"type="submit">Add Quote</button>
       </form>
     </div>
   </div>

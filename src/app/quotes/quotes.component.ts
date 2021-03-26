@@ -1,5 +1,7 @@
+import { getParseErrors } from '@angular/compiler';
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 import { Quotes} from '../quotes'
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-quotes',
@@ -24,7 +26,7 @@ export class QuotesComponent implements OnInit {
    this.toDelete.emit(del);
  }
 
- quoteDelete(toDelete: any, index: number) {
+ quoteDelete(toDelete:any, index: number) {
    if(toDelete) {
      this.quotes.splice(index, 1);
    }
