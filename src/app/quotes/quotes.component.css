@@ -1,6 +1,4 @@
-bi {
-  font-size: 30px;
-}
+/* Start of Header  */
 .heading-section {
   background: linear-gradient(to right, rgb(2, 228,171), rgb(74,215,240));
   padding: 100px;
@@ -9,6 +7,23 @@ bi {
   color: white;
   font-weight: bold;
 }
-quote-card {
-  margin-bottom: 20px;
+.heading-p {
+  color: white;
 }
+.bi-chat-square-quote-fill{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+/* END of Header  */
+
+/* Quote display START  */
+.quote-card {
+  margin-bottom: 40px;
+  justify-self: center;
+  
+}
+.bi-trash-fill{
+  font-size: 18px;
+}
+/* ENd of Quote Display  */
