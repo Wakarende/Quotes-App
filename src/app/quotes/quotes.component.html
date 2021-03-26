@@ -3,16 +3,15 @@
   <h1 class="text-center heading-title">Quotes</h1>
 </section>
 <app-form (addQuote)="addNewQuote($event)"></app-form>
-<div class="card">
-  <div class="card-body">
-    <div *ngFor='let quote of quotes'>
-      <p><span class="display-text">Submitted By:</span>{{quote.name}}</p>
-      <p><span class="display-text">Quote:</span> {{quote.quote}}</p>
-      <p><span class="display-text">Author: </span>{{quote.author}}</p>
-      <button class="btn btn-danger" (click) ='deleteQuote(true)' [quotes]='quote' (toDelete)='quoteDelete($event,i)'><i class="bi bi-trash-fill"></i></button>
-      <hr>
-    </div> 
-  </div>
 
-</div>
+    <div *ngFor='let quote of quotes'>
+      <div class="card quote-card">
+        <div class="card-body">
+          <p><span class="display-text">Submitted By:</span>{{quote.name}}</p>
+          <p><span class="display-text">Quote:</span> {{quote.quote}}</p>
+          <p><span class="display-text">Author: </span>{{quote.author}}</p>
+          <button class="btn btn-danger" (click) ='deleteQuote(true)' [quotes]='quote' (toDelete)='quoteDelete($event,i)'><i class="bi bi-trash-fill"></i></button>
+        </div> 
+      </div>
+    </div>
 
