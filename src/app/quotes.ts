@@ -1,11 +1,11 @@
 export class Quotes {
   public name: string;
-  public text: string;
+  public quote: string;
   public author: string;
 
-  constructor(name,text,author) {
+  constructor(name,quote,author) {
     this.name=name;
-    this.text = text;
+    this.quote = quote;
     this.author = author
   }
 
