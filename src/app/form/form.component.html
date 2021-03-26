@@ -21,21 +21,27 @@
      <button type="submit">Add Quote</button>
 </form> -->
 <div class="container">
-  <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
-  <label for="Name">
-    Name:
-  </label>
-  <input type="text" class="form-control" id="name" formControlName="name">
-  <label for="quote">
-    Enter Quote:
-  </label>
-  <input type="text" class="form-control" id="quote" formControlName="quote">
-  <label for="author">
-    Author:
-  </label>
-  <input type="text" id="author" class="form-control" formControlName="author">
-  <button type="submit">Add Quote</button>
-</form>
+  <div class="card card-title">
+    <h1 class="text-center">Add New Quote Here</h1>
+    <div class="card-body">
+      <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
+        <label for="Name">
+          Name:
+        </label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+        <label for="quote">
+          Enter Quote:
+        </label>
+        <input type="text" class="form-control" id="quote" formControlName="quote">
+        <label for="author">
+          Author:
+        </label>
+        <input type="text" id="author" class="form-control" formControlName="author">
+        <button type="submit">Add Quote</button>
+      </form>
+    </div>
+  </div>
+  
 </div>
 
 <!-- <form (ngSubmit)="onSubmit()">

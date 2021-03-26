@@ -6,6 +6,7 @@
       <p>Submitted By:{{quote.name}}</p>
       <p>Quote: {{quote.quote}}</p>
       <p>Author: {{quote.author}}</p>
+      <button class="btn btn-danger" (click) ='deleteQuote(true)' [quotes]='quote' (toDelete)='quoteDelete($event, i)'><i class="bi bi-trash-fill"></i></button>
       <hr>
     </div> 
 <!-- <app-quote-details></app-quote-details> -->
