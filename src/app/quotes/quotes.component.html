@@ -26,6 +26,11 @@
             <footer class="blockquote-footer"><p><span class="display-text">Author:</span><br>{{quote.author}}</p></footer>
           </blockquote>
             <button class="btn btn-danger btn-grad" (click)="deleteQuote($event, i)"><i class="bi bi-trash-fill"></i></button>
+            <div class="btn-vote">
+            <button class="btn btn-success"><i class="bi bi-hand-thumbs-up"></i></button> 
+            <button class="btn btn-danger"><i class="bi bi-hand-thumbs-down"></i></button>
+            </div>
+            
         </div>
       </div>
     </div>
