@@ -18,7 +18,6 @@ export class FormComponent implements OnInit {
 
   @Output() addQuote = new EventEmitter<Quotes>();
   onSubmit() {
-    // console.log(this.quoteForm.value);
     this.addQuote.emit(this.quoteForm.value);
   }
   // @Input() quotes: Quotes;

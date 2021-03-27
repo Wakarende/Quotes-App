@@ -3,30 +3,33 @@
   <p>
     <i class="bi bi-chat-square-quote-fill"></i>
   </p>
-  <h1 class="text-center heading-title">Quotes</h1>
-  <p class="text-center heading-p lead">Create your quote here!</p>
+  <h1 class="text-center heading-title">Quote Generator</h1>
+  <p class="text-center heading-p lead">Create your quotes here!</p>
 </section>
-<app-form (addQuote)="addNewQuote($event)"></app-form>
-
-    <div *ngFor='let quote of quotes'>
+  <app-form (addQuote)="addNewQuote($event)"></app-form>
+  
+    <!-- <div *ngFor='let quote of quotes'>
       <div class=" shadow p-3 mb-5 bg-white rounded card quote-card" style="width: 50rem;">
         <div class="card-body">
-          <p class="text-center"><span class="display-text">Submitted By:</span><br>{{quote.name}}</p>
-          <p class="text-center"><span class="display-text">Quote:</span><br> {{quote.quote}}</p>
-          <p class="text-center"><span class="display-text">Author:</span><br>{{quote.author}}</p>
-          <button class="btn btn-danger" (click) ='deleteQuote(true)' [quotes]='quote' (toDelete)='quoteDelete($event,i)'><i class="bi bi-trash-fill"></i></button>
         </div> 
       </div>
+    </div> -->
+    <div class="container quote-card-container">
+      <div *ngFor="let quote of quotes" class="div" [style.display]= "displayNone">
+       <div class="card shadow p-3 mb-5 bg-white rounded card quote-card" >
+        <div class="card-header">
+          <p class="text-center display-text"><span class="display-text">Submitted By:</span><br>{{quote.name}}</p>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote ">
+              <p><span class="display-text">Quote:</span><br> {{quote.quote}}</p>
+            <footer class="blockquote-footer"><p><span class="display-text">Author:</span><br>{{quote.author}}</p></footer>
+          </blockquote>
+            <button class="btn btn-danger btn-grad" (click)="deleteQuote($event, i)"><i class="bi bi-trash-fill"></i></button>
+        </div>
+      </div>
     </div>
-    <div class="card">
-  <div class="card-header">
-    Quote
-  </div>
-  <div class="card-body">
-    <blockquote class="blockquote mb-0">
-      <p>A well-known quote, contained in a blockquote element.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
-  </div>
-</div>
+    </div>
+    
+   
 

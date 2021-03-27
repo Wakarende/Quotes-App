@@ -1,6 +1,6 @@
 /* Start of Header  */
 .heading-section {
-  background: linear-gradient(to right, rgb(2, 228,171), rgb(74,215,240));
+  background:linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
   padding: 100px;
 }
 .heading-title {
@@ -18,12 +18,47 @@
 /* END of Header  */
 
 /* Quote display START  */
+.card-header{
+   background:linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
+}
+.display-text{
+  color: white;
+}
 .quote-card {
   margin-bottom: 40px;
-  justify-self: center;
-  
+  width: 30rem;
+  height: 25rem;
+}
+.quote-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: space-around;
+  column-gap: 5rem;
 }
 .bi-trash-fill{
   font-size: 18px;
 }
+
+.btn-grad {background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)}
+
+.btn-grad {
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+         
 /* ENd of Quote Display  */
