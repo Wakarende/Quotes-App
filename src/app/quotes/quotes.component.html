@@ -26,8 +26,15 @@
             <footer class="blockquote-footer"><p><span class="display-text">Author:</span><br>{{quote.author}}</p></footer>
           </blockquote>
             <button class="btn btn-danger btn-grad" (click)="deleteQuote($event, i)"><i class="bi bi-trash-fill"></i></button>
-           
             <app-quote-details></app-quote-details>
+           <!-- <div class="btn-vote">
+            <button class="btn btn-success" id="upvote" (click)="upvote(i)" >{{quotes.like}}<i class="bi bi-hand-thumbs-up"></i></button> 
+            <button class="btn btn-danger" id="downvote" (click)="downvote(i)" >{{quotes.dislike}}<i class="bi bi-hand-thumbs-down"></i></button>
+          </div> -->
+          <!-- <div class="btn-vote">
+            <button class="btn btn-success" id="upvote" (click)="likeButtonClick()" >{{numberOfLikes}}<i class="bi bi-hand-thumbs-up"></i></button> 
+            <button class="btn btn-danger" id="downvote" (click)="dislikeButtonClick()" >{{quotes.dislike}}<i class="bi bi-hand-thumbs-down"></i></button>
+          </div> -->
         </div>
       </div>
     </div>

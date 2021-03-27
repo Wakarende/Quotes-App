@@ -24,7 +24,7 @@ export class QuotesComponent implements OnInit {
  
   @Output() deleteRequest = new EventEmitter<Boolean>();
 
-  deleteQuote(deleteRequest, index:number, ) {
+  deleteQuote(deleteRequest, index:number,) {
     
     if(deleteRequest){
       var remove = confirm('Are you sure you want to delete this?')
@@ -32,7 +32,14 @@ export class QuotesComponent implements OnInit {
       this.quotes.splice(index,1)
     }
   }
-
+@Input () qoutes:Quotes;
+  // numberOfLikes:number= 0;
+  // likeButtonClick() {
+  //   this.numberOfLikes++
+  // }
+  // dislikeButtonClick() {
+  //   this.numberOfLikes--
+  // }
   // upvote(){
   //   this.quotes.like++
   // }
@@ -40,6 +47,15 @@ export class QuotesComponent implements OnInit {
   //   this.quotes.dislike++
   // }
 
+  // upvote(index){
+  //   var up = this.quotes[index].upvote+1;
+  //   this.quotes[index].upvote = up]
+  // }
+
+  // downvote(index){
+  //   var down = this.quotes[index].downvote+1;
+  //   this.quotes[index].downvote = down;
+  // }
   constructor() { }
 
   ngOnInit(): void {
