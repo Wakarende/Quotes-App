@@ -1,18 +1,13 @@
 export class Quotes {
-  public name: string;
-  public quote: string;
-  public author: string;
-  public like:number;
-  public dislike:number;
- 
-  
+   public upvotes: number;
+   public downvotes: number;
 
-  constructor(name,quote,author,like,dislike) {
-    this.name=name
-    this.quote = quote
-    this.author = author
-    this.like= like
-    this.dislike = dislike
+  constructor(public name: string,public quote: string,public author: string,  public completeDate: Date,) {
+    // this.name=name
+    // this.quote = quote
+    // this.author = author
+    // this.upvotes
+    // this.downvotes
   }
 
 }
