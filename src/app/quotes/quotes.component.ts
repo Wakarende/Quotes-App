@@ -11,8 +11,8 @@ import { keyframes } from '@angular/animations';
 })
 export class QuotesComponent implements OnInit {
  quotes: Quotes[] = [
-   new Quotes('Joy', 'There is no sadder sight than a young pessimist', 'Mark Twain'),
-   new Quotes('Preston','A chain is no stronger than its weakest link, and life is after all a chain', 'William James')
+   new Quotes('Joy', 'There is no sadder sight than a young pessimist', 'Mark Twain',0,0),
+   new Quotes('Preston','A chain is no stronger than its weakest link, and life is after all a chain', 'William James',0,0)
  ]
  
  addNewQuote(quotes:any) {
@@ -33,6 +33,12 @@ export class QuotesComponent implements OnInit {
     }
   }
 
+  // upvote(){
+  //   this.quotes.like++
+  // }
+  // downvote(){
+  //   this.quotes.dislike++
+  // }
 
   constructor() { }
 

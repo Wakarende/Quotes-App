@@ -17,14 +17,15 @@ export class FormComponent implements OnInit {
   });
 
   @Output() addQuote = new EventEmitter<Quotes>();
+  newQuote = new Quotes('','','',0,0)
   onSubmit() {
     this.addQuote.emit(this.quoteForm.value);
+     
   }
-  // @Input() quotes: Quotes;
-  // @Output() addQuote = new EventEmitter<Quotes>();
-  // newQuote = new Quotes('','','')
+  
+ 
 
-  // onSubmit() {
+  ////  onSubmit() {
   //   // this.addQuote.emit(this.newQuote)
   //   console.log(this.addQuote)
   // }
