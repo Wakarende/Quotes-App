@@ -4,49 +4,33 @@ created by Joy Kirii
 
 ## Description
 
-This is an Angular 11 application that allows a user to create quotes.
+This is an Angular application that allows a user to create quotes.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
+## Installation
+
+- Firstly, in order to run this application in your local machine, you need to have installed NMP and Angular.
+- Clone the application using git clone https://github.com/Wakarende/Quotes-App.git
+- Run your own version of the app bu initiating it using the command ng serve -o.
+
 ## BDD
 
-The user can upvote or downvote a quote and also delete a quote.
+- The user can add a quote by filling a form. The forms required inputs are the name of the person submitting the quote, the author of the quote and the quote. Upon submition of the form, the users quote will be displayed on the page.
+- The user can upvote or downvote a quote. The user will be able to see the number of upvotes a quote has. The user will also be able to see the quote with the highest upvotes.
+- The use can delete quotes.
 
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-- jQuery
+- Angular
 - Bootstrap
 
 ## Known Bugs
 
 - Date count starts counting from previous month instead of current month.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Contact
 
