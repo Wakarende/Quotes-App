@@ -6,8 +6,6 @@ export class Quotes {
     // this.name=name
     // this.quote = quote
     // this.author = author
-    this.upvotes = 0
-    this.downvotes = 0
   }
 
 }
