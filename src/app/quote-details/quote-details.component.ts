@@ -17,22 +17,9 @@ export class QuoteDetailsComponent implements OnInit {
     this.quotes.upvotes ++
   }
   downvote() {
-    this.quotes.downvotes --
+    this.quotes.downvotes ++
   }
-  //  numberOfLikes:number= 0;
-  // likeButtonClick() {
-  //   this.numberOfLikes++
-  // }
-  // dislikeButtonClick() {
-  //   this.numberOfLikes--
-  // }
-  // likeButtonClick() {
-  //   this.quotes.upvotes ++;
-  // }
-  // dislikeButtonClick() {
-  //   this.quotes.downvotes ++;
-  // }
-
+  
   constructor() { }
 
   ngOnInit(): void {

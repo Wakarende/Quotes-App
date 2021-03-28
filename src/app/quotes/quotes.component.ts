@@ -31,37 +31,20 @@ export class QuotesComponent implements OnInit {
     }
   }
 
+firstNumber: number;
+secondNumber: number;
+counter: number;
 
-// likeButtonClick() {
-//     this.saying.upvotes++;
-//   }
-//   dislikeButtonClick() {
-//     this.saying.downvotes++;
-//   }
-  // numberOfLikes:number= 0;
-  // likeButtonClick() {
-  //   this.numberOfLikes++
-  // }
-  // dislikeButtonClick() {
-  //   this.numberOfLikes--
-  // }
-  // upvote(){
-  //   this.quotes.like++
-  // }
-  // downvote(){
-  //   this.quotes.dislike++
-  // }
+highestUpvote() {
+  this.firstNumber = 0
+  this.secondNumber= 0
 
-  // upvote(index){
-  //   var up = this.quotes[index].upvote+1;
-  //   this.quotes[index].upvote = up]
-  // }
-
-  // downvote(index){
-  //   var down = this.quotes[index].downvote+1;
-  //   this.quotes[index].downvote = down;
-  // }
-  
+  for(this.counter = 0; this.counter < this.quotes.length; this.counter ++){
+    this.secondNumber = this.quotes[this.counter].upvotes;
+    if(this.secondNumber > this.firstNumber) {this.firstNumber = this.secondNumber}
+  }
+  return this.firstNumber
+}
 
   constructor() { }
 

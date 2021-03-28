@@ -22,12 +22,6 @@ export class FormComponent implements OnInit {
     this.addQuote.emit({...this.newQuote});
   }
   
- 
-
-  ////  onSubmit() {
-  //   // this.addQuote.emit(this.newQuote)
-  //   console.log(this.addQuote)
-  // }
   constructor() { }
 
   ngOnInit(): void {

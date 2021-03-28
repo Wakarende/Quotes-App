@@ -15,7 +15,12 @@
         </div>
         <div class="card-body">
           <blockquote class="blockquote ">
-              <p><span class="display-text">Quote:</span><br> {{quote.quote}}</p>
+              <p appHighlightDirective *ngIf ="highestUpvote()===quote.upvotes && quote.upvotes>0"><span class="display-text">Quote:</span><br> {{quote.quote}}</p>
+              <p *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</p>
+              <!-- <p appHighilightDirective *ngIf="()===quote.upvotes && quote.upvotes>0">
+            {{quote.text}} <br> 
+          </p> -->
+          <!-- <p *ngIf="highestLikebtn()!==quote.upvotes || quote.likes==>0"></p> -->
             <footer class="blockquote-footer"><p><span class="display-text">Author:</span><br>{{quote.author}}</p></footer>
           </blockquote>
             <app-quote-details [quotes]='quote' (deleteRequest)='quoteDelete($event,i)'></app-quote-details>
