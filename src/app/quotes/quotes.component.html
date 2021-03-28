@@ -7,13 +7,6 @@
   <p class="text-center heading-p lead">Create your quotes here!</p>
 </section>
   <app-form (addQuote)="addNewQuote($event)"></app-form>
-  
-    <!-- <div *ngFor='let quote of quotes'>
-      <div class=" shadow p-3 mb-5 bg-white rounded card quote-card" style="width: 50rem;">
-        <div class="card-body">
-        </div> 
-      </div>
-    </div> -->
     <div class="container quote-card-container">
       <div *ngFor="let quote of quotes; let i=index" class="div" >
        <div class="card shadow p-3 mb-5 bg-white rounded card quote-card" >
