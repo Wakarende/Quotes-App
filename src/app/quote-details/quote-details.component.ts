@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter,Output} from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -9,6 +9,16 @@ import { Quotes } from '../quotes';
 export class QuoteDetailsComponent implements OnInit {
   @Input() quotes:Quotes;
 
+  @Output() deleteRequest = new EventEmitter<boolean>();
+  deleteQuote(del: boolean) {
+    this.deleteRequest.emit(del);
+  }
+  upvote() {
+    this.quotes.upvotes ++
+  }
+  downvote() {
+    this.quotes.downvotes ++
+  }
   //  numberOfLikes:number= 0;
   // likeButtonClick() {
   //   this.numberOfLikes++
@@ -16,12 +26,12 @@ export class QuoteDetailsComponent implements OnInit {
   // dislikeButtonClick() {
   //   this.numberOfLikes--
   // }
-  likeButtonClick() {
-    this.quotes.upvotes ++;
-  }
-  dislikeButtonClick() {
-    this.quotes.downvotes ++;
-  }
+  // likeButtonClick() {
+  //   this.quotes.upvotes ++;
+  // }
+  // dislikeButtonClick() {
+  //   this.quotes.downvotes ++;
+  // }
 
   constructor() { }
 

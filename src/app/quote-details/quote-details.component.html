@@ -6,6 +6,11 @@
                 <button class="btn btn-danger btn-vote" id="downvote"  (click)="dislikeButtonClick()">{{quotes.downvotes}}<i class="bi bi-hand-thumbs-down"></i></button> -->
             <!-- </div> -->
             <!-- <span class="votes-disp">{{numberOfLikes}}</span> -->
+              <!-- <button (click)="upvote()">{{quotes.upvotes}}<i class="bi bi-hand-thumbs-up"></i></button>
+              <button (click)="downvote()">{{quotes.downvotes}} <i class="bi bi-hand-thumbs-down"></i></button> -->
+<div class="flex-likes">
+  <button class="btn btn-danger btn-grad btn-grad-red btn-sm"(click)="upvote()">{{quotes.upvotes}}<i class="bi bi-hand-thumbs-up"></i></button>
+  <button class="btn btn-success btn-grad-success btn-grad btn-sm" (click)="downvote()">{{quotes.downvotes}}<i class="bi bi-hand-thumbs-down"></i></button><br>
+</div> 
+  <button class="btn btn-danger btn-grad-delete btn-grad" (click)="deleteQuote(true)"><i class="bi bi-trash-fill"></i></button>
           
-          <!--
-          -->

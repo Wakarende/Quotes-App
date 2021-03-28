@@ -15,7 +15,7 @@
       </div>
     </div> -->
     <div class="container quote-card-container">
-      <div *ngFor="let quote of quotes" class="div" >
+      <div *ngFor="let quote of quotes; let i=index" class="div" >
        <div class="card shadow p-3 mb-5 bg-white rounded card quote-card" >
         <div class="card-header">
           <p class="text-center display-text"><span class="display-text">Submitted By:</span><br>{{quote.name}}</p>
@@ -25,8 +25,8 @@
               <p><span class="display-text">Quote:</span><br> {{quote.quote}}</p>
             <footer class="blockquote-footer"><p><span class="display-text">Author:</span><br>{{quote.author}}</p></footer>
           </blockquote>
-            <button class="btn btn-danger btn-grad" (click)="deleteQuote($event, i)"><i class="bi bi-trash-fill"></i></button>
             
+            <app-quote-details [quotes]='quote' (deleteRequest)='quoteDelete($event,i)'></app-quote-details>
              <!-- <button class="btn btn-success btn-vote" id="upvote"  (click)="likeButtonClick()">{{quote.upvotes}}<i class="bi bi-hand-thumbs-up"></i></button> 
                 <button class="btn btn-danger btn-vote" id="downvote"  (click)="dislikeButtonClick()">{{quote.downvotes}}<i class="bi bi-hand-thumbs-down"></i></button> -->
             <p>Created:{{quote.completeDate|dateCount}} days ago</p>
@@ -35,11 +35,11 @@
             <button class="btn btn-danger" id="downvote" (click)="downvote(i)" >{{quotes.dislike}}<i class="bi bi-hand-thumbs-down"></i></button>
           </div> -->
       
-            <button class="btn btn-success" id="upvote" (click)="likeButtonClick()" >{{quotes.upvotes}}<i class="bi bi-hand-thumbs-up"></i></button> 
-            <button class="btn btn-danger" id="downvote" (click)="dislikeButtonClick()" >{{quotes.downvotes}}<i class="bi bi-hand-thumbs-down"></i></button>
-  
+            <!-- <button class="btn btn-success" id="upvote" (click)="likeButtonClick()" >{{saying.upvotes}}<i class="bi bi-hand-thumbs-up"></i></button> 
+            <button class="btn btn-danger" id="downvote" (click)="dislikeButtonClick()" >{{saying.downvotes}}<i class="bi bi-hand-thumbs-down"></i></button> -->
+              
           <div class="div">
-               <app-quote-details></app-quote-details>
+               
             </div>
         </div>
       </div>

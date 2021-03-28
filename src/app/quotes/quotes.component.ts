@@ -11,10 +11,10 @@ import { keyframes } from '@angular/animations';
 })
 export class QuotesComponent implements OnInit {
  quotes: Quotes[] = [
-   new Quotes('Joy', 'There is no sadder sight than a young pessimist', 'Mark Twain',new Date(2021,2,26)),
-   new Quotes('Preston','A chain is no stronger than its weakest link, and life is after all a chain', 'William James',new Date(2021,2,25)),
-   new Quotes('Burens','The landscape belongs to the person who looks are it', 'Ralph Waldo Emerson', new Date(2021,2,27)),
-   new Quotes('James','Civilizaiton is a limiteless multiplication of unnecessary necessities', 'Mark Twain', new Date(2021,2,24)),
+   new Quotes('Joy', 'There is no sadder sight than a young pessimist', 'Mark Twain',new Date(2021,2,26),0,0,0),
+   new Quotes('Preston','A chain is no stronger than its weakest link, and life is after all a chain', 'William James',new Date(2021,2,25),0,0,0),
+   new Quotes('Burens','The landscape belongs to the person who looks are it', 'Ralph Waldo Emerson', new Date(2021,2,27),0,0,0),
+   new Quotes('James','Civilizaiton is a limiteless multiplication of unnecessary necessities', 'Mark Twain', new Date(2021,2,24),0,0,0),
  ]
  
  addNewQuote(quotes:any) {
@@ -24,22 +24,19 @@ export class QuotesComponent implements OnInit {
  }
  
  
-  @Output() deleteRequest = new EventEmitter<Boolean>();
-
-  deleteQuote(deleteRequest, index:number,) {
-    
-    if(deleteRequest){
-      var remove = confirm('Are you sure you want to delete this?')
-    }if(remove == true){
+  quoteDelete(deleteRequest:boolean, index:number) {
+    deleteRequest = confirm('Are you sure you want to delete this?')
+    if(deleteRequest == true){
       this.quotes.splice(index,1)
     }
   }
-// @Input() quote:Quotes[];
+
+
 // likeButtonClick() {
-//     this.quotes.upvotes ++;
+//     this.saying.upvotes++;
 //   }
 //   dislikeButtonClick() {
-//     this.quotes.downvotes ++;
+//     this.saying.downvotes++;
 //   }
   // numberOfLikes:number= 0;
   // likeButtonClick() {
