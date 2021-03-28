@@ -27,20 +27,7 @@
           </blockquote>
             
             <app-quote-details [quotes]='quote' (deleteRequest)='quoteDelete($event,i)'></app-quote-details>
-             <!-- <button class="btn btn-success btn-vote" id="upvote"  (click)="likeButtonClick()">{{quote.upvotes}}<i class="bi bi-hand-thumbs-up"></i></button> 
-                <button class="btn btn-danger btn-vote" id="downvote"  (click)="dislikeButtonClick()">{{quote.downvotes}}<i class="bi bi-hand-thumbs-down"></i></button> -->
             <p>Created:{{quote.completeDate|dateCount}} days ago</p>
-           <!-- <div class="btn-vote">
-            <button class="btn btn-success" id="upvote" (click)="upvote(i)" >{{quotes.like}}<i class="bi bi-hand-thumbs-up"></i></button> 
-            <button class="btn btn-danger" id="downvote" (click)="downvote(i)" >{{quotes.dislike}}<i class="bi bi-hand-thumbs-down"></i></button>
-          </div> -->
-      
-            <!-- <button class="btn btn-success" id="upvote" (click)="likeButtonClick()" >{{saying.upvotes}}<i class="bi bi-hand-thumbs-up"></i></button> 
-            <button class="btn btn-danger" id="downvote" (click)="dislikeButtonClick()" >{{saying.downvotes}}<i class="bi bi-hand-thumbs-down"></i></button> -->
-              
-          <div class="div">
-               
-            </div>
         </div>
       </div>
     </div>
