@@ -11,10 +11,10 @@ import { keyframes } from '@angular/animations';
 })
 export class QuotesComponent implements OnInit {
  quotes: Quotes[] = [
-   new Quotes('Joy', 'There is no sadder sight than a young pessimist', 'Mark Twain',new Date(2021,3,26)),
-   new Quotes('Preston','A chain is no stronger than its weakest link, and life is after all a chain', 'William James',new Date(2021,3,25)),
-   new Quotes('Burens','The landscape belongs to the person who looks are it', 'Ralph Waldo Emerson', new Date(24,3,2021)),
-   new Quotes('James','Civilizaiton is a limiteless multiplication of unnecessary necessities', 'Mark Twain', new Date(23,3,2021)),
+   new Quotes('Joy', 'There is no sadder sight than a young pessimist', 'Mark Twain',new Date(2021,2,26)),
+   new Quotes('Preston','A chain is no stronger than its weakest link, and life is after all a chain', 'William James',new Date(2021,2,25)),
+   new Quotes('Burens','The landscape belongs to the person who looks are it', 'Ralph Waldo Emerson', new Date(2021,2,27)),
+   new Quotes('James','Civilizaiton is a limiteless multiplication of unnecessary necessities', 'Mark Twain', new Date(2021,2,24)),
  ]
  
  addNewQuote(quotes:any) {

@@ -8,6 +8,7 @@ import { FormComponent } from './form/form.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirectiveDirective } from './highlight-directive.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DateCountPipe } from './date-count.pipe';
     FormComponent,
     QuotesComponent,
     QuoteDetailsComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightDirectiveDirective
   ],
   imports: [
     BrowserModule,
