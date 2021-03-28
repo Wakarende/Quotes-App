@@ -12,11 +12,14 @@ export class DateCountPipe implements PipeTransform {
     const secondsInDay = 86400;
     var dateDifferenceSeconds = dateDifference*0.001;
     var dateCounter = dateDifferenceSeconds/secondsInDay;
-   
-    if(dateCounter >= 1){
-      return dateCounter;
+    var output:any;
+    
+    if(dateCounter >= 1 && value < today){
+      output = "${dateCounter} days ago."
+      return output;
     }else{
-      return 0;
+      output = "0 days"
+      return output;
     }
     
   }
