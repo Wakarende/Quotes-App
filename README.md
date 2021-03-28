@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## BDD
 
-The user can upvote or downvote a quote and also deleter a quote.
+The user can upvote or downvote a quote and also delete a quote.
 
 ## Technologies Used
 
