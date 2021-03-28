@@ -21,10 +21,11 @@
             {{quote.text}} <br> 
           </p> -->
           <!-- <p *ngIf="highestLikebtn()!==quote.upvotes || quote.likes==>0"></p> -->
-            <footer class="blockquote-footer"><p><span class="display-text">Author:</span><br>{{quote.author}}</p></footer>
+            <footer class="blockquote-footer"><p><span class="display-text">Author:</span><br>{{quote.author}}</p>
+            <span class="display-day">Created:{{quote.completeDate|dateCount}} days ago</span>
+            </footer>
           </blockquote>
             <app-quote-details [quotes]='quote' (deleteRequest)='quoteDelete($event,i)'></app-quote-details>
-            <p>Created:{{quote.completeDate|dateCount}} days ago</p>
         </div>
       </div>
     </div>
