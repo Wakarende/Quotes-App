@@ -30,7 +30,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Known Bugs
 
-- Date count starts counting from previous month instead of current month.
+- No known bugs
 
 ## Contact
 
