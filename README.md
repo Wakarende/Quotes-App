@@ -37,7 +37,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 For any further questions, contributions or feedback, get in touch with me through the following contacts;
 
 - Email: joykirii@gmail.com
-- Phone: +254723212289
 
 ## License
 
